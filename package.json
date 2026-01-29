@@ -1,0 +1,22 @@
+{
+  "name": "kube-badges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon  --watch 'src/**/*.ts' --exec 'tsc' src/index.ts && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Taehyun Lim <admin@limtaehyun.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@kubernetes/client-node": "^1.4.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "nodemon": "^3.1.11",
+    "typescript": "^5.9.3"
+  }
+}
